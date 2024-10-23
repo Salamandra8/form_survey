@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey for programming enthusiasts</h1>
+    <p id="description">Thank you for taking the time to help us</p>
+    <form id="survey-form">
+       <fieldset>
+         <label id="name-label" for="name">Name:<input id="name" type="text" required placeholder="Enter your name"></label>
+       <label id="email-label" for="email">Email:<input id="email" type="email" required placeholder="Enter your Email"></label>
+       <label id="number-label" for="number">Age
+(optional)<input id="number" type="number" min="18" max="80"  placeholder="Age"></label>
+       </fieldset>
+       <fieldset>
+         <label for="dropdown">What is your favorite programming language?</label>
+       <select id="dropdown" name="dropdown">
+           <option value="">Python</option>
+           <option value="1">Java Script</option>
+           <option value="2">C++</option>
+           <option value="3">Java</option>
+       </select>
+       </fieldset>
+       <fieldset>
+         <legend>Do you work in programming?</legend>
+         <label><input id="inline" name="working" type="radio" chacked="">Yes</label>
+         <label><input id="inline" name="working" type="radio">No</label>
+       </fieldset>
+       <fieldset>
+         <legend>Do you enjoy working out?</legend>
+         <label><input id="inline" type="checkbox"  value="checkbox">Yes</label>
+         <label><input id="inline" type="checkbox" value="checkbox">No</label>
+       </fildset>
+       <fieldset>
+         <label for="comments"> Your success story<textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+       </label>
+       <input id="submit" type="submit" value="Submit">
+       </fieldset>
+       
+    </form>
+</body>
+</html>
